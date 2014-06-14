@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#myTab a[href="home"]').tab('show')
+$('#myTab a[href="about"]').tab('show')
